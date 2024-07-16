@@ -1,6 +1,6 @@
 # migrate
 Python tool to automate simple zfs send/recv tasks. Used to send datatets to local compressed files or to remote hosts with given compression and bandwidth limit by ssh. Also handles stream interrupts and best possible compression negotiation. Depends : pv, bzip2, gzip, xz, lz4, zstd. Full help:
-
+```
 usage: migrate.py [-h] [-s SOURCE] [-r REMOTE] [-l LIMIT] [-t TIME] [-d DEST] [-c COMPRESSION] [--snap] [-R] [-o] [--snap_after]
                   [--update] [--sync] [--update_from_snap UPDATE_FROM_SNAP]
 
@@ -26,3 +26,4 @@ options:
   --sync                Keep latest local snapshot for replication with given host
   --update_from_snap UPDATE_FROM_SNAP
                         Snapshot from which to create update file
+```
